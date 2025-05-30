@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Portal ASSA</title>		
+		<meta charset="utf-8">
+		<link rel="icon"href="images/favicon.png" >
+		<!-- cambiar tama;os de pantalla-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+		<link rel="stylesheet" href="plugin/leaflet.css">
+		<script src="plugin/leaflet.js"></script>
+
+		<!-- plugin de clusteerrrr para que se cuenten los puntoooos -->
+		<script src="plugin/leaflet.markercluster.js"></script>
+		<link rel="stylesheet" href="plugin/MarkerCluster.css">
+		<link rel="stylesheet" href="plugin/MarkerCluster.Default.css">
+		<link rel="stylesheet"type="text/css"  href="plugin/leaflet-search.min.css">
+		<script type="text/javascript"src="plugin/leaflet-search.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<!--  para el complemento de ubicacion gps -->
+		<link rel="stylesheet" type="text/css" href="plugin/L.Control.Locate.css">
+		<script type="text/javascript"src="plugin/L.Control.Locate.min.js"></script>
+
+
+		<!-- (Necesitarías descargar el plugin o alojarlo tú mismo, ya que no siempre existe CDN.) -->
+
+		
+	</head>
+	<body>
+		<header>
+			<img src="images/surperu_1.png" id="logo">
+			<h2>Geoportal Proyecto ASSA</h2>
+			<img src="images/intersur.png" id="logo">
+		</header>
+
+		<div id = "mapa"></div>
+
+		<!-- esto es para enlazar el maps.js de js aqui y le ponga ese atributo al "mapa" que creamos niammm -->
+			<script type="text/javascript"src="layers/geojson/derecho_de_via.js"></script>
+			<script type="text/javascript"src="layers/geojson/calicatas.js"></script>
+			<script type="text/javascript"src="layers/geojson/calicatas2.js"></script>
+			<script type="text/javascript"src="layers/geojson/calicatas3.js"></script>
+			<script type="text/javascript"src="layers/geojson/predios.js"></script>
+			<script type="text/javascript"src="layers/geojson/sectores.js"></script>	
+			<script type="text/javascript"src="layers/geojson/progresivas.js"></script>					
+			<script type="text/javascript"src="layers/geojson/BGR_psad.js"></script>
+<!-- 			<script type="text/javascript"src="layers/CiudadesMundo.js"></script>-->
+<!-- 			<script type="text/javascript"src="layers/PaisesMundo.js"></script>-->
+			<script type="text/javascript"src="layers/geojson/inter_elect.js"></script>
+		<!--ES MUY IMPORTANTEEEEEEEEEEEEE ESTE ORDEN PRIMERO LOS JS YOS ICON Y LUYEGO EL MAP LKAJSDFL;ASKJDFL;AKJSDF -->
+			<script type="text/javascript" src="js/icon.js"></script>
+			<script type="text/javascript" src="js/symbologies.js"></script>
+			<script type="text/javascript" src="js/popups.js"></script>
+			<script type="text/javascript" src="js/tooltip.js"></script>
+	<!-- con esto se enlaza con el java scrip de maps donde hemos puesto la Funcion L. xdxdxd colocar los icon dspues -->
+			<script type="text/javascript"src="js/maps.js"></script>
+
+	</body>
+</html>
