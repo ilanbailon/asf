@@ -1,0 +1,67 @@
+body,html{
+	margin:0;
+	padding:0;
+	height: 100%;
+}
+header {
+	background-color: whitesmoke; /*color de fondo tmbn puees ponerlo en exadecimal*/
+	display:flex; /*para que se acomode el texto si tiene espacio*/
+	align-items: center; 
+	padding: 5px;
+}
+#logo{ /*es la id que le pusiste en el index*/
+	height: 50px;
+	margin-right: 10px;
+	display: flex;
+	align-items: center;
+}
+
+header h2{
+	color:black;
+	text-align:center; /*es diferente que align items ps xxdxdxd*/
+	flex-grow: 1;
+	height: 30px;
+}
+
+@media(max-width: 768px){/*para que cambie cuando tenga menos de 768 px*/
+	header{
+		flex-direction: column;
+		text-align: center;
+	}
+	#logo {
+		margin-right: 0px;
+		margin-top: 10 px;
+	}
+}
+
+#mapa {
+
+		height: calc(100% - 100px);
+		width: 100%;
+} 
+
+.tooptip_BGR_style{
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.tooptip_predios_style{
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 200px;      /* Ancho fijo */
+}
+
+.tooptip_prog_style {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*.popup-img-calicatas{
+	width : 2%;
+	height: auto;	
+}*/	
+
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  gap: 2em; /* Puedes ajustar el valor según el espaciado deseado */
+}
+
